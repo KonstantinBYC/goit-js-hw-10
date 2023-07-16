@@ -4,19 +4,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homework 10</title>
+  <title>Cat's Breeds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Iceberg&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/slim-select@latest/dist/slimselect.css" />
+
+  <link rel="stylesheet" href="/src/css/main.css" />
 </head>
 
 <body>
   <select class="breed-select"></select>
-  <p class="loader">Loading data, please wait...</p>
-  <p class="error">Oops! Something went wrong! Try reloading the page!</p>
+  <p class="loader" style="display: none">Loading data, please wait...</p>
+  <p class="error" style="display: none">Oops! Something went wrong! Try reloading the page!</p>
+
   <div class="cat-info"></div>
+  <span class="loader" style="display: none"></span>
 
-  <span class="loader"></span>
+  <div class="wrapper">
+    <div class="content">
+      <header class="main-header">
+        <div class="layers">
+          <div class="layers__header">
+            <div class="layers__title">Cat Finder</div>
+          </div>
+          <!-- <div class="layer layers__base" style="background-image: url('../images/layer-base.jpg')"></div> -->
+        </div>
+      </header>
 
+      <div class="main-article__content">
+        <select class="breed-select" id="my-select">
+          <option name="cat" selected>--Please choose an option--</option>
+        </select>
+        <span class="loader" style="display: none"></span>
 
+        <div class="container">
+          <div class="close-btn">
+            <div class="cl-btn-6-in">
+              <div class="cl-btn-6-txt">CLOSE</div>
+            </div>
+          </div>
+          <div class="cat-info"></div>
+        </div>
+      </div>
+
+      </article>
+    </div>
+  </div>
+
+  <script src="js/app.js" type="module" defer></script>
   <script src="index.js" type="module"></script>
+  <script src="./js/modal.js" type="module"></script>
 </body>
 
 </html>

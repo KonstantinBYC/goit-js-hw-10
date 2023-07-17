@@ -10,33 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Iceberg&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/slim-select@latest/dist/slimselect.css" />
-
   <link rel="stylesheet" href="/src/css/main.css" />
 </head>
 
 <body>
-  <select class="breed-select"></select>
-  <p class="loader" style="display: none"></p>
-  <p class="error" style="display: none">Oops! Something went wrong! Try reloading the page!</p>
 
-  <div class="cat-info"></div>
-  <span class="loader" style="display: none"></span>
+  <select class="breed-select" id="my-select">
+    <option name="cat" selected>--Please choose an option--</option>
+  </select>
+
+  <p class="loader" style="display: none"></p>
+
+  <p class="error" style="display: none">Oops! Something went wrong! Try reloading the page!</p>
+  <div class="content">
+    <header class="main-header">
+      <div class="layers__title">Cat Finder</div>
+    </header>
+  </div>
 
   <div class="wrapper">
     <div class="content">
-      <header class="main-header">
-        <div class="layers">
-          <div class="layers__header">
-            <div class="layers__title">Cat Finder</div>
-          </div>
-          <!-- <div class="layer layers__base" style="background-image: url('../images/layer-base.jpg')"></div> -->
-        </div>
-      </header>
-
       <div class="main-article__content">
-        <select class="breed-select" id="my-select">
-          <option name="cat" selected>--Please choose an option--</option>
-        </select>
+        <div class="cat-info"></div>
         <span class="loader" style="display: none"></span>
 
         <div class="container">
@@ -48,8 +43,6 @@
           <div class="cat-info"></div>
         </div>
       </div>
-
-      </article>
     </div>
   </div>
 
